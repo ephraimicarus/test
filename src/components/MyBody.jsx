@@ -1,6 +1,4 @@
 import * as React from "react";
-import AdGenerator from "./AdGenerator.jsx";
-import MyHeader from "./MyHeader.jsx";
 import { AsciiDisplay } from "./AsciiDisplay.jsx";
 import "../css/app.css";
 import { LoadingDiv } from "./LoadingDiv.jsx";
@@ -9,13 +7,13 @@ export class MyBody extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      items: [],
-      page: 1,
+      items: [], //API fetch data buffer
+      page: 1, //API fetch page modifier
       loading: true,
     };
   }
 
-  loadOnScroll = () => {
+  loadOnScroll = () => { //infinite scroll feature
     if (
       window.scrollY + window.innerHeight >=
       document.documentElement.scrollHeight
@@ -50,7 +48,7 @@ export class MyBody extends React.Component {
       return (
         <div className="grid-container">
           {this.state.items.map((item, index) => (
-            <AsciiDisplay
+            <AsciiDisplay      //--------------------main data display div
               key={index}
               face={item.face}
               size={item.size}

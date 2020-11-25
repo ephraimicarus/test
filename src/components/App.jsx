@@ -3,7 +3,6 @@ import AdGenerator from "./AdGenerator.jsx";
 import MyHeader from "./MyHeader.jsx";
 import { MyBody } from "./MyBody.jsx";
 import "../css/app.css";
-import { LoadingDiv } from "./LoadingDiv.jsx";
 
 function App () {
   return (

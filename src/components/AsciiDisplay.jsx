@@ -1,5 +1,4 @@
 import * as React from "react";
-import { AsciiDisplayInfo} from "./AsciiDisplayInfo"
 
 export class AsciiDisplay extends React.Component {
   constructor(props) {
@@ -11,7 +10,7 @@ export class AsciiDisplay extends React.Component {
     };
   }
 
-  priceFormat = () => {
+  priceFormat = () => {           //format price from cents to $ xx.xx
     let apiP = this.state.price;
     let priceFormatted = "$ " + apiP / 100;
 
@@ -27,10 +26,10 @@ export class AsciiDisplay extends React.Component {
     }
   };
 
-  dateFormat = () => {
+  dateFormat = () => {    //date display on product grid items manipulation
     let d = Date.now();
     let a = Date.parse(this.state.date);
-    let daysSinceIssued = (d - a) / (1000 * 60 * 60 * 24);
+    let daysSinceIssued = (d - a) / (1000 * 60 * 60 * 24); //days past since Ascii face published, in milliseconds
 
 
     if (daysSinceIssued > 0 && daysSinceIssued < 1) {
