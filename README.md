@@ -32,6 +32,32 @@ then start the React Developement server on localhost port 3000, which is the ho
         -product info display
         -loading effect (rough)
 
+# Notes
+
+Features that require additional work. Current status and solution/modification proposition after the "==>":
+
+    -loading effect ==> STATUS: only basic logic implemented. SOLUTION/MODIFICATON: refactor the this.state.loading attribute,
+                        create a rotating shape in vanilla Javascript, improve shape design with CSS, implement shape
+                        through div or as a React component
+
+    -product info display ==> STATUS: layout in an acceptable stage. SOLUTION/MODIFICATION: Ascii faces need to fit grid elements perfectly,
+                              CSS modifications on grid-container necesarry
+
+    -fetching API data ==> STATUS: basic fetch implemented. SOLUTION/MODIFICATION: improve fetch effieciency with API call techniques
+                         (currently researching)
+
+    -design/UI in general ==> STATUS: minimum implemented. SOLUTION/MODIFICATION: major CSS and Javascript implementation required
+
+Features that need to be implemented and their solution proposition:
+
+    -sort API data (size, price, ID) ==> SOLUTION: implement a sort method on API buffer load (researching)
+
+    -display advertisement every 20 products: !!!Advertisement basic fetch logic implemented (see ./src/components/AdGenerator.jsx)!!!
+                                              SOLUTION: Since, in this particular project, 10 different ads are rotated and the "/r"
+                                              URL variable returns a number between 1 and 10, the solution would be to fetch and load ad
+                                              upon API product fetch (API fetches 20 products), store "/r", then check if the "/r" variable is different (or equal ===) to the last called "/r". If equal, call different ad. P.S, currently researching and testing best technique
+
+
 # ORIGINAL TASK README
 
 # Products Grid
