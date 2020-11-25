@@ -10,7 +10,8 @@ export class AsciiDisplay extends React.Component {
     };
   }
 
-  priceFormat = () => {           //format price from cents to $ xx.xx
+  priceFormat = () => {
+    //format price from cents to $ xx.xx
     let apiP = this.state.price;
     let priceFormatted = "$ " + apiP / 100;
 
@@ -26,11 +27,11 @@ export class AsciiDisplay extends React.Component {
     }
   };
 
-  dateFormat = () => {    //date display on product grid items manipulation
+  dateFormat = () => {
+    //date display on product grid items manipulation
     let d = Date.now();
     let a = Date.parse(this.state.date);
     let daysSinceIssued = (d - a) / (1000 * 60 * 60 * 24); //days past since Ascii face published, in milliseconds
-
 
     if (daysSinceIssued > 0 && daysSinceIssued < 1) {
       this.setState({
@@ -64,6 +65,9 @@ export class AsciiDisplay extends React.Component {
         </div>
         <div className="itemDescription">
           <ul>
+            <br></br>
+
+            <li>Price: {this.props.price}</li>
             <br></br>
 
             <li>Size: {this.props.size}</li>
