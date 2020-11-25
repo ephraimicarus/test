@@ -3,7 +3,7 @@ import React from "react";
 let r = Math.floor(Math.random() * 1000);
 const adUrl = "/ads/?r="+r;
 
-function AdGenerator() {
+function AdGenerator() { //retrieves images based on "adUrl" url
   return (
     <div>
       Ad Generator

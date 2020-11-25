@@ -13,13 +13,13 @@ function MyHeader() {
         <nav className="navbar">
           <ul>
             <li>
-              <a href="">Sort by Id</a>
+              <a href="#">Sort by Id</a>
             </li>
             <li>
-              <a href="">Sort by Price</a>
+              <a href="#">Sort by Price</a>
             </li>
             <li>
-              <a href="">Sort by Size</a>
+              <a href="#">Sort by Size</a>
             </li>
           </ul>
         </nav>
