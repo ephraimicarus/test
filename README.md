@@ -21,8 +21,15 @@ Hope you enjoy!
 
 # Instructions
 
-Follow the link https://github.com/ephraimicarus/test to my GitHub repository 7. Click the green button "Code", located top-right from the file tree structure, which will display a dropdown menu once clicked 8. Choose "Download ZIP" from the dropdown menu 9. On your machine, extract downloaded .zip file to your preferred destination 10. Using your terminal, navigate to the extract destination project folder then run VSCode with the "code ." command 11. Run "npm install" or "yarn install", depending on your node system (further instructions implement "npm") 12. Once step 6 executes, run the command "npm run dev". This should first initiate the JSON server on localhost port 5000,
-then start the React Developement server on localhost port 3000, which is the home/display page. 13. Enjoy!
+-Follow the link https://github.com/ephraimicarus/test to my GitHub repository
+
+- Click the green button "Code", located top-right from the file tree structure, which will display a dropdown menu once clicked
+- Choose "Download ZIP" from the dropdown menu
+- On your machine, extract downloaded .zip file to your preferred destination
+- Using your terminal, navigate to the extract destination project folder then run VSCode with the "code ." command
+- Run "npm install" or "yarn install", depending on your node system (further instructions implement "npm")
+- Once previous step executes, run the command "npm run dev". This should first initiate the JSON server on localhost port 5000,
+  then start the React Developement server on localhost port 3000, which is the home/display page.
 
 # Implemented Features
 
@@ -56,7 +63,6 @@ Features that need to be implemented and their solution proposition:
                                               SOLUTION: Since, in this particular project, 10 different ads are rotated and the "/r"
                                               URL variable returns a number between 1 and 10, the solution would be to fetch and load ad
                                               upon API product fetch (API fetches 20 products), store "/r", then check if the "/r" variable is different (or equal ===) to the last called "/r". If equal, call different ad. P.S, currently researching and testing best technique
-
 
 # ORIGINAL TASK README
 
