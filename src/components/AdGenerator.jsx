@@ -6,7 +6,6 @@ const adUrl = "/ads/?r="+r;
 function AdGenerator() { //retrieves images based on "adUrl" url
   return (
     <div>
-      Ad Generator
       <img className="ad" src={adUrl} />
     </div>
   );
