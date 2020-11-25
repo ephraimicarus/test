@@ -32,6 +32,8 @@ then start the React Developement server on localhost port 3000, which is the ho
         -product info display
         -loading effect (rough)
 
+# ORIGINAL TASK README
+
 # Products Grid
 
 This is an ecommerce site, where you can buy all sorts of ascii faces like `(ノ・∀・)ノ` and `¯_(ツ)_/¯`, in a wide variety of font sizes. The homepage should display a list of products for people to browse.
