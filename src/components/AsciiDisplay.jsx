@@ -65,7 +65,6 @@ export class AsciiDisplay extends React.Component {
         </div>
         <div className="itemDescription">
           <ul>
-            <br></br>
 
             <li>Price: {this.state.price}</li>
             <br></br>
