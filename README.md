@@ -19,12 +19,13 @@ Hope you enjoy!
 
 ======
 
-1.  # Instructions
+# Instructions
 
 Follow the link https://github.com/ephraimicarus/test to my GitHub repository 7. Click the green button "Code", located top-right from the file tree structure, which will display a dropdown menu once clicked 8. Choose "Download ZIP" from the dropdown menu 9. On your machine, extract downloaded .zip file to your preferred destination 10. Using your terminal, navigate to the extract destination project folder then run VSCode with the "code ." command 11. Run "npm install" or "yarn install", depending on your node system (further instructions implement "npm") 12. Once step 6 executes, run the command "npm run dev". This should first initiate the JSON server on localhost port 5000,
 then start the React Developement server on localhost port 3000, which is the home/display page. 13. Enjoy!
 
-2.  # Implemented Features
+# Implemented Features
+
         -fetching API data
         -infinite scrolling
         -grid display
