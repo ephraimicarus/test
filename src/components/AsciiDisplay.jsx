@@ -37,8 +37,7 @@ export class AsciiDisplay extends React.Component {
       this.setState({
         date: "Freshly baked ASCII face!",
       });
-    } else if (daysSinceIssued === 1) {
-    } else if (daysSinceIssued > 1 && daysSinceIssued < 2) {
+    } else if (daysSinceIssued >= 1 && daysSinceIssued < 2) {
       this.setState({
         date: "Yesterday",
       });
@@ -65,7 +64,6 @@ export class AsciiDisplay extends React.Component {
         </div>
         <div className="itemDescription">
           <ul>
-
             <li>Price: {this.state.price}</li>
             <br></br>
 
